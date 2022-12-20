@@ -1,9 +1,14 @@
-# CRUD-Employee_backend 
+# CRUD-Employee_backend
 
-in terminal -
+Setup Xamp server for mysql
+
+
+now, in terminal -
     1. pip install Django 
     2. pip install djangorestframework
-    3. py manage.py runserver 
+    3.  pip install django-cors-headers
+    4. pip install mysql
+    4. py manage.py runserver 
     
   server will run at port 8000 (default)
 
