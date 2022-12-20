@@ -79,7 +79,7 @@ export default function AddEmployee() {
           </label>
           <div className="col-sm-10">
             <input
-              type="text"
+              type="email"
               className="form-control"
               placeholder="Email"
               name="EmployeeEmail"
@@ -94,7 +94,7 @@ export default function AddEmployee() {
           </label>
           <div className="col-sm-10">
             <input
-              type="text"
+              type="number"
               className="form-control"
               id="inputPassword3"
               placeholder="Phone Number"
@@ -143,6 +143,7 @@ export default function AddEmployee() {
           <div className="col-sm-10">
             <input
               type="file"
+              accept="application/pdf,application/vnd.ms-excel"
               className="form-control"
               name="resume"
               onChange={(e: any) => setResume(e.target.files[0])}

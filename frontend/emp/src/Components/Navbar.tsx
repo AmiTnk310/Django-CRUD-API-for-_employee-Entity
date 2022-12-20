@@ -7,19 +7,12 @@ import { NavLink } from "react-router-dom";
 
 export default function NavbarMenu() {
   return (
-    <div className="   my-5 ">
+    <div className="my-5 bg-white" style={{position:"sticky" , top:0 , zIndex:"1"}} >
+      <div>
       <h1>Employee CRUD Project</h1>
-      {/* <Navbar bg="light" expand="lg">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Nav className="me-auto"> */}
-      {/* <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link> */}
-      {/* {/* <NavLink className="show-employee-nav" to='/employee'>Employees</NavLink> */}
-      {/* <NavLink className="add-employee-nav" to='addemp'>Add Employee</NavLink> */}
-      {/* <NavLink className="update-employee-nav" to ="update">Update</NavLink> */}
-      {/* </Nav> */}
-      {/* </Navbar> */}
-      <div className="box mt-5 w-100 d-flex justify-content-center "   style={{backgroundColor:"rgba(228, 224, 224, 0.300)" , borderRadius:"5px"}}>
+      </div>
+      <div >
+      <div className="box w-100 d-flex justify-content-center ">
         <div className="sub-box w-50 d-flex justify-content-between py-2" >
           <NavLink className="show-employee-nav" id="btn" to="/">
             Home
@@ -32,6 +25,7 @@ export default function NavbarMenu() {
             Add Employee
           </NavLink>
         </div>
+      </div>
       </div>
     </div>
   );
