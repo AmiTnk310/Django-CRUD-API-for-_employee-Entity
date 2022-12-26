@@ -98,3 +98,39 @@ body{
   color:rgba(8, 120, 8, 0.853)
 }
 
+#url{
+  text-decoration: none;
+  color: rgb(10,102,194);
+  font-weight: 500;
+  transition: 150ms;
+}
+#url:hover{
+  color:rgb(76, 71, 163)
+}
+
+.data-box{
+  @media (max-width: 600px){
+    flex-direction:column !important;
+  }
+}
+
+.detail-box{
+  text-align: center;
+  border: 1px solid darkgrey;
+  border-radius: 12px;
+  background-color: rgb(250,250,250);
+  transition: 500ms;
+}
+.detail-box:hover{
+  background-color: rgba(8, 120, 8, 0.853);
+  cursor:pointer;
+}
+.detail-box:hover .number{
+  color:whitesmoke
+}
+
+.number{
+  color:rgb(12,170,65);
+  font-size: 4.5rem;
+  font-weight: 600;
+}

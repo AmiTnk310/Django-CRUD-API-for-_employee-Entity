@@ -10,4 +10,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  animation:ease-in-out;
+  transition: 1s;
+  /* color:rgb(171, 208, 146) */
+}
+
+.empty-field-text{
+  color:red;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
