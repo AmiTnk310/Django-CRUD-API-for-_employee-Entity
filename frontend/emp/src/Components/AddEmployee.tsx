@@ -271,7 +271,7 @@ Password3"
       </form>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Employee Added</Modal.Title>
         </Modal.Header>
         <Modal.Body>Employee name - {name} added</Modal.Body>
         <Modal.Footer>

@@ -133,7 +133,7 @@ export default function UpdateEmployee() {
       exit={{ opacity: 0, transition: { duration: 0.4 } }}
       className="my-5 container w-75"
     >
-      <h1>UpdateEmployee</h1>
+      <h1>Update Employee</h1>
 
       <form>
         <div className="form-group row my-3">
@@ -275,12 +275,12 @@ export default function UpdateEmployee() {
       </form>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Updated</Modal.Title>
         </Modal.Header>
         <Modal.Body>Employee id - {id} Updated Successfully </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
-            okay
+            Okay
           </Button>
         </Modal.Footer>
       </Modal>

@@ -134,3 +134,16 @@ body{
   font-size: 4.5rem;
   font-weight: 600;
 }
+/* .mobile{
+  display: none;
+} */
+
+@media (max-width:768px){
+  .check{
+    display: none;
+  }
+  /* .mobile{
+    display: block;
+  } */
+}
+

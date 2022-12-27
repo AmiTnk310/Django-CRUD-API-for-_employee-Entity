@@ -62,7 +62,7 @@ export default function TestDetail() {
 
   const handleOkay=async()=>{
     await axios.delete(`http://localhost:8000/api/${id}`);
-    setShow(false)
+    setShow(true)
     navigate("/employee")
   }
 
@@ -192,13 +192,13 @@ export default function TestDetail() {
         <Modal.Header closeButton>
           <Modal.Title>Delete Confirmation</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Click Delete to delete Employee ID no. - {id}</Modal.Body>
+        <Modal.Body>Click <span style={{color:"red", fontWeight:"500"}}>Delete</span> to delete Employee ID no. - {id}</Modal.Body>
         <Modal.Footer>
           
           {/* <Button variant="primary" onClick={handleOkay()}>
             okay
           </Button> */}
-          <Button variant="primary" onClick={handleOkay}>Delete</Button>
+          <Button variant="primary" onClick={handleOkay} style={{ border:"none",backgroundColor: "rgba(213, 10, 10, 0.725)" }}>Delete</Button>
           <Button variant="primary" onClick={handleCancel}>
             cancel
           </Button>
