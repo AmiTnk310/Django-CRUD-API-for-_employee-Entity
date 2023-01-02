@@ -1,4 +1,4 @@
-import react from "react"
+import react from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,48 +7,73 @@ import { NavLink } from "react-router-dom";
 import icon from "../image/icon.png";
 
 function NavMenu() {
-
   return (
     <div className="container">
-      <Navbar bg="light" expand="md" className="mb-3 w-100 bg-primary">
-        <Container fluid className="w-75">
-          <Navbar.Brand href="/">
-            <img src={icon} alt="" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
-
-        
-       <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-sm`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
-            placement="end"
-            className="w-75 "
+     
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="navbar-brand" href="/">
+            {" "}
+            <img src={icon} alt="" />{" "}
+            <span style={{ fontWeight: 700 , color:'rgb(45,75,55)'}}>Employee CRUD</span>{" "}
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <Offcanvas.Header closeButton >
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-              <img src={icon} alt="" />  Employee CRUD
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-between flex-grow-1 pe-3">
-                <NavLink className="show-employee-nav" id="btn" to="/" >
-                  Home
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="collapse navbar-collapse center"
+            id="navbarSupportedContent"
+          >
+            <div className="d-flex justify-content-center w-100">
+              <div className="mobile d-flex  justify-content-between my-2 my-lg-0  w-75">
+                <NavLink className="show-employee-nav  my-2" id="btn" to="/">
+                  <span
+                    style={{ height: "100%" }}
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                  >
+                    Home
+                  </span>
                 </NavLink>
-                <NavLink className="show-employee-nav" id="btn" to="/employee">
-                  Employee List{" "}
+                <NavLink
+                  className="show-employee-nav  my-2"
+                  id="btn"
+                  to="/employee"
+                >
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                  >
+                    Employee List
+                  </span>
                 </NavLink>
 
-                <NavLink className="add-employee-nav" id="btn" to="addemp">
-                  + Add Employee{" "}
+                <NavLink
+                  className="add-employee-nav  my-2"
+                  id="btn"
+                  to="addemp"
+                >
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                  >
+                    {" "}
+                    + Add Employee
+                  </span>
                 </NavLink>
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-          
-       
-       
-        </Container>
-      </Navbar>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }

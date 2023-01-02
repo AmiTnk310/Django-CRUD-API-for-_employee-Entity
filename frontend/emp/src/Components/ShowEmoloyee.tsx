@@ -84,7 +84,7 @@ export default function ShowEmoloyee() {
                       <b className="px-3">
                         <i>LinkedIn-</i>
                       </b>
-                      <span className="" style={{wordBreak:"break-all"}}><a id='url' href={item.linkedin}> &#x2197;LinkedIn Profile </a></span>
+                      <span className="" style={{wordBreak:"break-all"}}><a id='url' target='blank' href={item.linkedin}> &#x2197;LinkedIn Profile </a></span>
                     </li>
                     <li
                       className="list-group-item my-1 d-flex"
@@ -93,7 +93,7 @@ export default function ShowEmoloyee() {
                       <b className="px-3">
                         <i>GitHub - </i>
                       </b>
-                      <span style={{wordBreak:"break-all"}}> <a id='url' href={item.github}> &#x2197; Github Profile </a></span>
+                      <span style={{wordBreak:"break-all"}}> <a id='url' target='blank' href={item.github}> &#x2197; Github Profile </a></span>
                     </li>
                     <li
                       className="list-group-item mt-1"

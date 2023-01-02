@@ -15,9 +15,5 @@ now, in terminal -
   Go to localhost:8000/admin
   
   
- # CRUD-Employee_frontend 
  
- in terminal - 
-      1. npm i 
-      2. npm start 
    

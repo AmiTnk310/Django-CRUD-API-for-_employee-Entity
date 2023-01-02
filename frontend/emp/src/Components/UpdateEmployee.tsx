@@ -246,7 +246,7 @@ export default function UpdateEmployee() {
               accept="application/pdf,application/vnd.ms-excel"
               className="form-control"
               name="resume"
-              
+              // value={preRes}
               // value="xya"
               
               onChange={(e: any) => {
@@ -254,7 +254,7 @@ export default function UpdateEmployee() {
                 setResumeErr("");
               }}
             />
-            <span className="empty-field-text my-2"><a target="blank" id="resume" href={`${preRes}`}>
+            <span className="empty-field-text my-2"><a target="blank" id="resume" style={{wordBreak:"break-all"}} href={`${preRes}`}>
            <i>Current File - </i> {preRes}
           </a>  </span><span className="empty-field-text my-2">{resumeErr}  </span> 
           </div>

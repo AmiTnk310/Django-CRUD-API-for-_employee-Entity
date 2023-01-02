@@ -41,20 +41,7 @@ export default function TestDetail() {
   };
 
   const deleteEmp = () => {
-    // ----------------------------------------
-    // eslint-disable-next-line no-restricted-globals
-    // const cnf = confirm(`Confirm Deleting ID no. ${id}`)
-
-    // eslint-disable-next-line no-restricted-globals
-    // if(cnf===true){
-    //   await axios.delete(`http://localhost:8000/api/${id}`);
-    //   alert(`ID no.${id} deleted`);
-    //   navigate("/employee");
-    // } else {
-    //   alert("Deletion cancelled");
-    //   // navigate(`/${id}/`);
-    // }
-
+   
     // ---------------------------------------------
     setShow(true)
     
@@ -141,7 +128,7 @@ export default function TestDetail() {
                       <b className="px-3">
                         <i>LinkedIn-</i>
                       </b>
-                      <span className="" style={{wordBreak:"break-all"}}><a id='url' href={employe.linkedin}> &#x2197;LinkedIn Profile </a></span>
+                      <span className="" style={{wordBreak:"break-all"}}><a id='url' target='blank' href={employe.linkedin}> &#x2197;LinkedIn Profile </a></span>
                     </li>
                     <li
                       className="list-group-item my-1 d-flex"
@@ -150,7 +137,7 @@ export default function TestDetail() {
                       <b className="px-3">
                         <i>GitHub - </i>
                       </b>
-                      <span style={{wordBreak:"break-all"}}> <a id='url' href={employe.github}> &#x2197; Github Profile </a></span>
+                      <span style={{wordBreak:"break-all"}}> <a id='url' target='blank'  href={employe.github}> &#x2197; Github Profile </a></span>
                     </li>
                     <li
                       className="list-group-item mt-1"
